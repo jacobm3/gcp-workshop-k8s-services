@@ -3,5 +3,5 @@
 #}
 
 output "test" {
-  value = "${terraform_remote_state.k8s_cluster.k8s_endpoint}"
+  value = "${data.terraform_remote_state.k8s_cluster.k8s_endpoint}"
 }
