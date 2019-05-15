@@ -1,13 +1,18 @@
 variable "k8s_cluster_workspace" {
+  default = "services-workspace"
   description = "workspace to use for the k8s cluster"
 }
 
 variable "frontend_image" {
-  default = "rberlind/cats-and-dogs-frontend:k8s-auth"
+  default = "httpd"
   description = "Docker image location of the frontend app"
 }
 
 variable "backend_image" {
-  default = "rberlind/cats-and-dogs-backend:k8s-auth"
+  default = "redis"
   description = "Docker image location of the frontend app"
+}
+
+variable "redis_password" {
+  description = "Password for redis service"
 }
