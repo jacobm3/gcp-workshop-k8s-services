@@ -14,5 +14,6 @@ variable "backend_image" {
 }
 
 variable "redis_password" {
+  default = "zo4zA5dl2SxMsNOhEoHI"
   description = "Password for redis service"
 }
